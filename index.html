@@ -1,8 +1,17 @@
 
 <html>
-<head><title>Problem Hacker - Home</title><link rel = "icon" href = "PH logo.png" ></head>
+<head><title>Problem Hacker - Home</title><link rel = "icon" href = "PH logo.png" >
+    <style>
+       .home-bg {
+        background-image: url("island_image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+      </style>
+</head>
 
-     <body link="black" vlink="black" alink="#154c79" onload="background1()">
+     <body link="black" vlink="black" alink="#154c79">
 
 <div align="right" style="background-color:white"><font size=3 face="Verdana"><br>
 <blockquote>
@@ -24,19 +33,13 @@
      </blockquote>
      </div> 
 
-    <div align="center" id="bg">
+    <div align="center" class="home-bg">
     <br><br>
    <font color="white" size=20>WELCOME</font><br><br><br>
     <video width= "750" height="350" autoplay muted loop>
     <source src="intro.mp4" type="video/mp4">
     </video><br><br><br><br><br><br>
     </div>    
-
-  
-   <script>
-   function background1() {
-   document.getElementById("bg").style.backgroundImage="url('island_image.png')";}
-   </script>
   
 </body>
 </html>
