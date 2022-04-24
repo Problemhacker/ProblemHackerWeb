@@ -18,7 +18,7 @@ font-family:Verdana;
 }
 
 .fitem:hover{
-background-color:#E5E5E5;
+background-color:#154c79;
 }
 
 .nev{
@@ -31,7 +31,7 @@ background-color:#E5E5E5;
 }
 
 .nev:hover{
-color: #154c79;
+color: white;
 text-decoration: underline;
 }
 
