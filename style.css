@@ -4,36 +4,45 @@ justify-content:flex-end;
 flex-wrap:wrap;
 background-color:white;
  z-index: 100;
+ position:relative;
 }
 
 .fitem{
 padding:15px;
 background-color:white;
+border-radius:3px;
 width:95px;
 height:20px;
 justify-content:flex-center;
 font-size:17px;
 text-align:center;
 font-family:Verdana;
+position:relative;
+transition:position top;
+transition-property:all;
+transition-duration: 0.8s;
 }
 
 .fitem:hover{
+top:10px;
 background-color:#154c79;
+box-shadow:-3px -3px 9px gray;
 }
 
 .nev{
   text-decoration: none;
   display:inline-block;
-  color: black;
+  color: #154c79;
   padding:2em;
   position:relative;
   margin:-2em;
 }
 
 .nev:hover{
-color: white;
+color:white;
 text-decoration: underline;
 }
+
 
 .logo_name{
 float:left;
@@ -74,7 +83,7 @@ filter:none;
 
 hr{
 margin:0;
-box-shadow:-1px 1px 5px grey;
+box-shadow:-1px 1px 2px lightgrey;
 }
 
 html{
@@ -96,3 +105,26 @@ scroll-behavior: smooth;
 text-shadow:-2px 2px 10px grey;
 cursor: pointer;
 }
+
+.custom-icon {
+  font-size: 45px;
+  color : white;
+ padding-right:35px;
+ padding-left:35px;
+}
+
+.custom-icon1 {
+  font-size: 45px;
+  color : white;
+  padding-right:35px;
+ padding-left:35px;
+}
+
+.custom-icon:hover{
+color:#FF0000;
+}
+
+.custom-icon1:hover{
+color:#00acee;
+}
+
