@@ -18,8 +18,8 @@ font-size:17px;
 text-align:center;
 font-family:Verdana;
 position:relative;
-transition:position top;
-transition-property:all;
+top:0px;
+transition-property: all;
 transition-duration: 0.8s;
 }
 
