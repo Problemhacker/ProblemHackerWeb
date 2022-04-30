@@ -19,7 +19,7 @@ text-align:center;
 font-family:Verdana;
 position:relative;
 top:0px;
-transition-property: all;
+transition-property: top, background-color, box-shadow;
 transition-duration: 0.8s;
 }
 
@@ -147,21 +147,28 @@ color:#00acee;
   right:35px;
   background-color:white; 
   color:#154c79;
-  border:none;
+  border:2px solid white;
   font-size:20px;
   font-weight: bold;
+
 }
 
 .btn1{
   position:relative;
-  
   padding:10px;
   bottom:180;
   left:35px;
   background-color:white; 
   color:#154c79;
-  border:none;
+  border:2px solid white;
   font-size:20px;
   font-weight: bold;
   z-index: 10;
+}
+
+.btn:hover{
+  border-color:black;
+}
+.btn1:hover{
+  border-color:black;
 }
