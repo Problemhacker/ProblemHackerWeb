@@ -28,7 +28,7 @@
 <br>
     <div align="center" class="slide-box">
     <h1><font color="black"><p align=center><u>Apna Squid Game Mobile</u></font></p></h1>
-   <img style=" filter: drop-shadow(4px 4px 5px gray);" width= "800" height="380" source src="SQM0.jpeg" Id="slider">
+    <button onclick="f()" class="btn1"><</button><img style=" filter: drop-shadow(4px 4px 5px gray);" width= "800" height="380" source src="SQM0.jpeg" Id="slider"><button onclick="f()" class="btn">></button>
  <br>
                             <div class="req" align="center">    
                               <font size=5 ><b> System Requirements- </b></font>
@@ -46,18 +46,21 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script>
+var x = 0;
 function f(){
+if(x == 0){
 document.getElementById("slider").src="SQM1.jpeg";
+x = 1;
 }
-function s(){
+else if(x == 1){
 document.getElementById("slider").src="SQM2.jpeg";
+x = 2;
 }
-function t(){
+else if(x == 2){
 document.getElementById("slider").src="SQM0.jpeg";
+x = 0;
 }
-setInterval(f,4000);
-setInterval(s,8000);
-setInterval(t,12000);
+}
 </script>
 
 <br>

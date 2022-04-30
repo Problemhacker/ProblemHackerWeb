@@ -71,7 +71,7 @@
 <br>
 
     <h1><font color="black"><p align=center><u>Apna Squid Game</u></font></p></h1>
-   <img style=" filter: drop-shadow(4px 4px 6px gray);" width= "800" height="400" src="squidgame.png" Id="slider"> 
+    <button onclick="f()" class="btn1"><</button><img style=" filter: drop-shadow(4px 4px 6px gray);" width= "800" height="400" src="squidgame.png" Id="slider"><button onclick="f()" class="btn">></button>
    <br>
 
                              <div class="req">                            
@@ -88,7 +88,6 @@
    <div align="right">
    <a class="goto" href="#top"><img width= "50" height="50" source src="top.png"></a>
    </div>
-
   <div align=center style="background-color:black">
 <br>
   <h2><a href="https://www.youtube.com/channel/UC5qv4LC0Ek6Vvl0nfHyj2iQ/" target="_blank"><ion-icon class="custom-icon" name="logo-youtube"></ion-icon></a>
@@ -97,23 +96,26 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script>
-function f(){
-document.getElementById("slider").src="squidgame1.png";
-}
-function s(){
-document.getElementById("slider").src="squidgame2.png";
-}
-function t(){
-document.getElementById("slider").src="squidgame3.png";
-}
-function v(){
-document.getElementById("slider").src="squidgame.png";
-}
-setInterval(f,3000);
-setInterval(s,6000);
-setInterval(t,9000);
-setInterval(v,12000);
-</script>
+    var x = 0;
+    function f(){
+    if(x == 0){
+    document.getElementById("slider").src="squidgame1.png";
+    x = 1;
+    }
+    else if(x == 1){
+    document.getElementById("slider").src="squidgame2.png";
+    x = 2;
+    }
+    else if(x == 2){
+    document.getElementById("slider").src="squidgame3.png";
+    x = 3;
+    }
+    else if(x == 3){
+    document.getElementById("slider").src="squidgame.png";
+    x = 0;
+    }
+    }
+    </script>
 
 <br>
      </body>
