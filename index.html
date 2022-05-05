@@ -4,17 +4,24 @@
    <style>
 
 .bg{
-background: rgba(0, 0, 0, 0.5);
-position:fixed;
-margin-top:12%;
+background: rgba(0, 0, 0, 0);
+position:relative;
 color:white;
-width:550px;
-height: 300px;
-vertical-align:center;
 padding-top:5%;
 padding-left:4%;
+width:550px;
+height: 625px;
+vertical-align:center;
+/*box-shadow:2px 2px 10px black;*/
+}
+
+.bg_text{
+margin-top:30%;
 text-shadow:-2px 2px 3px black;
-box-shadow:-2px 2px 10px black;
+}
+
+body{
+background-color:black;
 }
    </style>
  <link rel="stylesheet" href="style.css">
@@ -36,8 +43,10 @@ box-shadow:-2px 2px 10px black;
 </div>
     
 <div class="bg">
-<font style="font-size:100px; font-family:cursive;">Welcome...</font><br>
-<font style="font-size:25px; font-family:sans-serif;">Here, you will find some great games made by <em>indie</em> game developer.</font>
+<div class="bg_text">
+<font style="font-size:75px; font-family:cursive;">Welcome...</font><br>
+<font style="font-size:25px; font-family:sans-serif;">Here, you will find some great games made by <em><u>indie</u></em> game developer.</font>
+</div>
 </div>
  
 
