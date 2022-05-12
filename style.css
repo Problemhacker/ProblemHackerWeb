@@ -54,10 +54,39 @@
   background-color:white;
   margin:0;
   font-family:cursive;
-  color:white;
-  text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79, 2px -2px 15px #154c79, -2px 2px 15px #154c79;
-
+  color:#154c79
+  ;
+  /*text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79, 2px -2px 15px #154c79, -2px 2px 15px #154c79;*/
+  animation-name: logo_sha;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  transition-duration:2s;
 }
+
+@keyframes logo_sha {
+
+  0%{
+    color:#154c79;
+  }
+  25%{
+  color:white;
+  text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79;
+  }
+  50%{
+  color:white;
+  text-shadow: 2px -2px 15px #154c79, -2px 2px 15px #154c79;
+  }
+  75%{
+    color:white;
+    text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79;
+  }
+  100%{
+  color:#154c79;
+  }
+  
+}
+
+
 
 .setfixed{
   position:sticky;
@@ -104,23 +133,30 @@ html{
   opacity: 0.6;
 }
 
+.icon_contain{
+  box-shadow: 1px 1px 10px grey;
+  border-radius: 5px;
+  position: fixed;
+  right:0;
+  top:320px;
+  background-color:#154c79;
+  padding:10px;
+  margin:5px;
+}
 
 .custom-icon {
-  font-size: 45px;
+  font-size: 35px;
   color : white;
-  padding-right:35px;
-  padding-left:35px;
   transition-property: all;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
+  padding-bottom:20px;
 }
 
 .custom-icon1 {
-  font-size: 45px;
+  font-size: 35px;
   color : white;
-  padding-right:35px;
-  padding-left:35px;
   transition-property: all;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .custom-icon:hover{
