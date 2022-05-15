@@ -40,7 +40,6 @@
 
 .nev:hover{
   color:white;
-  text-decoration: underline;
 }
 
 
@@ -50,40 +49,34 @@
   border-color:#154c79;
   border-radius: 5px;*/
   padding:8px;
-  padding-left:40px;
+  padding-left:6px;
   background-color:white;
   margin:0;
   font-family:cursive;
-  color:#154c79
-  ;
-  /*text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79, 2px -2px 15px #154c79, -2px 2px 15px #154c79;*/
+  color:#154c79;
+}
+
+.logo_icon{
+  float:left;
   animation-name: logo_sha;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  transition-duration:2s;
+  animation-duration: 12s;
+  animation-iteration-count:infinite;
+  animation-delay: 2s;
+  top:0;
+  position:relative;
+  width:45px;
+  height:45px;
+  margin-left:50px;
+  margin-top:3px;
+  left:-200px;
 }
 
 @keyframes logo_sha {
 
-  0%{
-    color:#154c79;
+  40%,60%,80%{
+    left:0;
+    transform: rotate(360deg);
   }
-  25%{
-  color:white;
-  text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79;
-  }
-  50%{
-  color:white;
-  text-shadow: 2px -2px 15px #154c79, -2px 2px 15px #154c79;
-  }
-  75%{
-    color:white;
-    text-shadow: -2px -2px 8px #154c79, 2px 2px 8px #154c79;
-  }
-  100%{
-  color:#154c79;
-  }
-  
 }
 
 
@@ -100,17 +93,6 @@ body{
   overflow-x: hidden;
 }
 
-.goto{
-  position:fixed;
-  bottom:0;
-  right:0;
-  margin:6px;
-  filter:grayscale(100%);
-}
-
-.goto:hover{
-  filter:none;
-}
 
 hr{
   margin:0;
@@ -134,10 +116,8 @@ html{
 }
 
 .icon_contain{
-  box-shadow: 1px 1px 10px grey;
-  border-radius: 5px;
   position: fixed;
-  right:0;
+  right:40px;
   top:320px;
   background-color:#154c79;
   padding:10px;
@@ -149,7 +129,8 @@ html{
   color : white;
   transition-property: all;
   transition-duration: 0.5s;
-  padding-bottom:20px;
+  padding-top:6px;
+  padding-bottom:25px;
 }
 
 .custom-icon1 {
@@ -157,6 +138,15 @@ html{
   color : white;
   transition-property: all;
   transition-duration: 0.5s;
+  padding-bottom:18px;
+}
+
+.goto{
+  filter:brightness(0) invert(1);
+  width:35px;
+  height:35px;
+  padding-bottom:5px;
+  transition-duration: 0.3s;
 }
 
 .custom-icon:hover{
@@ -167,11 +157,15 @@ html{
   color:#00acee;
 }
 
+.goto:hover{
+  filter:none;
+}
+
 .req{
 
-  /*background-color:lightgrey;*/
-  border-style: dashed;
-  border-color: #154c79;
+  background-color:#f1f1f1;
+  border-style:solid;
+  border-color: grey;
   text-align:center;
   width:50%;
   margin:45px;
