@@ -5,10 +5,11 @@
   background-color:white;
   z-index: 100;
   position:relative;
+  padding:10px;
 }
 
 .fitem{
-  padding:15px;
+  padding:20px;
   background-color:white;
   border-radius:4px;
   width:95px;
@@ -26,7 +27,7 @@
 .fitem:hover{
   top:10px;
   background-color:#154c79;
-  box-shadow:-3px -3px 9px gray;
+  box-shadow:-3px -4px 9px gray;
 }
 
 .nev{
@@ -50,9 +51,10 @@
   border-radius: 5px;*/
   padding:8px;
   padding-left:6px;
+  padding-top:22px;
   background-color:white;
   margin:0;
-  font-family:cursive;
+  font-family: cursive;
   color:#154c79;
 }
 
@@ -62,12 +64,12 @@
   animation-duration: 12s;
   animation-iteration-count:infinite;
   animation-delay: 2s;
-  top:0;
   position:relative;
-  width:45px;
-  height:45px;
-  margin-left:50px;
-  margin-top:3px;
+  padding:8px;
+  padding-top: 9px;
+  width:60px;
+  height:60px;
+  margin-left:60px;
   left:-200px;
 }
 
