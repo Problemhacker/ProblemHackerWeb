@@ -1,7 +1,7 @@
 
 <html>
 <head><title>Problem Hacker - Home</title><link rel = "icon" href = "PH logo.png" >
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
 
 .bg_text{
@@ -9,6 +9,15 @@ position:absolute;
 top:360px;
 color:#154c79;
 left:30px;
+}
+
+.bg_text2{
+position:relative; 
+z-index:5;
+left:300px;
+top:750px;
+color:white;
+text-shadow:2px 2px 10px black;
 }
 
 .Index_bg{
@@ -36,6 +45,8 @@ left:740px;
 z-index:2;
 transition-duration: 0.3s;
 }
+
+
 
 
    </style>
@@ -68,7 +79,7 @@ transition-duration: 0.3s;
 <img class="Index_bg" src="tri.png">
 <img class="Index_bg2" src="char.png">
 
-<font size=8 style="position:relative; z-index:5;left:300px;top:750px;color:white;text-shadow:2px 2px 10px black;">CROSS PLATEFORM GAMES AVALABLE</font>
+<font size=8 class="bg_text2">CROSS PLATEFORM GAMES AVALABLE</font>
    
  <video autoplay muted loop id="myVideo">
     <source src="intro.mp4" type="video/mp4">

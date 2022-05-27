@@ -1,7 +1,7 @@
 .fcontainer{
   display:flex;
   justify-content:flex-end;
-  flex-wrap:wrap;
+  /*flex-wrap:wrap;*/
   background-color:white;
   z-index: 100;
   position:relative;
@@ -244,4 +244,103 @@ html{
 
 .download:hover::before{
   height:100%;
+}
+
+@media only screen and (max-width:700px) {
+
+  .fcontainer{
+    display:block;
+    top:80px;
+    background-color:#154c79;
+    z-index: 100;
+    position:absolute;
+    padding:10px;
+    width:1600px;
+  }
+  
+  .fitem{
+    background-color:#154c79;
+    width:1300px;
+    font-size:25px;
+    text-align: right;
+    font-family:Verdana;
+    position:relative;
+  }
+
+  .fitem:hover{
+    top:0px;
+    box-shadow: none;
+  }
+
+  .nev{
+    text-decoration: none;
+    display:inline;
+    color:white;
+    position:relative;
+  }
+
+  .logo_name{
+    padding:8px;
+    padding-left:6px;
+    padding-top:22px;
+    background-color:white;
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#154c79;
+  }
+
+  .nev:hover{
+    color:black;
+  }
+  
+  .bg_text{
+    position:absolute;
+    top:450px;
+    color:#154c79;
+    left:180px;
+    width: 1000px;
+    }
+
+    .bg_text2{
+      position:absolute; 
+      left:340px;
+      top:1400px;
+      color: white;
+      text-shadow:2px 2px 10px black;
+      width:1000px;
+      }
+    
+    .Index_bg{
+    position:absolute;
+    top:700px;
+    left:750px;
+    width:820px;
+    height:620px;
+    }
+    
+    .Index_bg2:hover{
+    transform: scale(1.0);
+    }
+    
+    
+    .Index_bg2{
+    position:absolute;
+    padding-top:30px;
+    padding-right:60px;
+    width:950px;
+    height:550px;
+    top:720px;
+    left:440px;
+    z-index:2;
+    transition-duration: 0.3s;
+    }
+
+    #myVideo{
+      position:absolute;
+      top:1350px;
+      width:1620px;
+      height:1200px;
+      z-index: -2;
+    }
+  
 }
