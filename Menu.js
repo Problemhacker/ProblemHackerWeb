@@ -1,19 +1,24 @@
 
-  document.getElementById("menu").style.left = "0px";
+window.onload = function wid(){
+  if(window.innerWidth<401){
+  document.getElementById("menu").style.left = "-355px";
+ }
+ else{
+ document.getElementById("menu").style.left = "0px";
+ }
+}
 
 function show(){
 
-   if(document.getElementById("menu").style.left == "-350px"){
+   if(document.getElementById("menu").style.left == "-355px"){
 
-  document.getElementById("menu").style.left = "0px";
-  document.getElementById("m_icon").style.transform = "rotate(90deg)";
+  document.getElementById("menu").style.left = "-240px";
 
   }
 
   else{
 
-  document.getElementById("menu").style.left = "-350px";
-  document.getElementById("m_icon").style.transform = "rotate(180deg)";
+  document.getElementById("menu").style.left = "-355px";
 
   }
 
