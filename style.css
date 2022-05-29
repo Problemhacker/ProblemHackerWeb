@@ -209,6 +209,30 @@ html {
   font-family: verdana;
 }
 
+.req3 {
+
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-color: grey;
+  text-align: center;
+  width: 50%;
+  margin: 45px;
+  padding: 15px;
+  font-family: verdana;
+}
+
+.req4 {
+
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-color: grey;
+  text-align: center;
+  width: 50%;
+  margin: 45px;
+  padding: 15px;
+  font-family: verdana;
+}
+
 .btn {
   position: relative;
   padding: 10px;
@@ -236,11 +260,45 @@ html {
 }
 
 .btn:hover {
-  border-color: black;
+  border-color: #154c79;
 }
 
 .btn1:hover {
-  border-color: black;
+  border-color: #154c79;
+}
+
+.btn2 {
+  position: relative;
+  padding: 10px;
+  bottom: 180px;
+  right: 35px;
+  background-color: white;
+  color: #154c79;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.btn3 {
+  position: relative;
+  padding: 10px;
+  bottom: 180;
+  left: 35px;
+  background-color: white;
+  color: #154c79;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.btn2:hover {
+  border-color: #154c79;
+}
+
+.btn3:hover {
+  border-color: #154c79;
 }
 
 .download {
@@ -293,31 +351,69 @@ html {
   height: 400px;
 }
 
-.head_about{
+.head_about {
 
-  font-family:Segoe UI; 
-  color:#154c79;
-  font-size:50px;
+  font-family: Segoe UI;
+  color: #154c79;
+  font-size: 50px;
 }
 
-.img_about{
-  float:left;
-  padding-right:15px;
-  width:300px; 
-  height:305px;
+.img_about {
+  float: left;
+  padding-right: 15px;
+  width: 300px;
+  height: 305px;
 }
 
-.cont{
-  margin-top:50px;
-  border:solid black;
-  padding:25px;
-  background-color:#f1f1f1; 
-  position:relative;
-  width:800px;
-  text-align:justify;
-  height:300px;
-  }
+.cont {
+  margin-top: 50px;
+  border: solid black;
+  padding: 25px;
+  background-color: #f1f1f1;
+  position: relative;
+  width: 800px;
+  text-align: justify;
+  height: 300px;
+}
 
+.SQimg2 {
+  filter: drop-shadow(6px 6px 6px gray);
+  width: 800px;
+  height: 380px;
+}
+
+.head_mobile {
+  font-family: Segoe UI;
+  color: #154c79;
+  size: 50px;
+}
+
+.head_gameMobile {
+  color: black;
+  font-family: arial;
+}
+
+.HR_img {
+  filter: drop-shadow(6px 6px 6px gray);
+  width: 800px;
+  height: 380px;
+}
+
+.Store_1 {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 20px;
+  width: 900px;
+}
+
+.Store_2 {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 20px;
+  width: 900px;
+}
 
 
 @media (max-width:400px) {
@@ -331,6 +427,7 @@ html {
     width: 96.5%;
     top: 40px;
     transition: 1.5s;
+    left:-355px;
     border-radius: 5px;
   }
 
@@ -541,22 +638,21 @@ html {
 
   .btn {
     position: relative;
-    padding: 10px;
-    bottom: 180px;
-    right: -140px;
+    padding: 5px;
+    bottom: 120px;
+    right: -150px;
     background-color: white;
     color: #154c79;
     border: 2px solid white;
     font-size: 20px;
     font-weight: bold;
-
   }
 
   .btn1 {
     position: relative;
-    padding: 10px;
-    bottom: 180;
-    left: -140px;
+    padding: 5px;
+    bottom: 120;
+    left: -150px;
     background-color: white;
     color: #154c79;
     border: 2px solid white;
@@ -623,9 +719,9 @@ html {
   }
 
   .cont {
-    border:none;
-    padding:5px;
-    background-color:white;
+    border: none;
+    padding: 5px;
+    background-color: white;
     position: absolute;
     top: 150px;
     width: 95%;
@@ -633,20 +729,187 @@ html {
     height: 90%;
   }
 
-  .head_about{
-    font-family:Segoe UI; 
-    color:#154c79;
-    font-size: 40px;
-    position: absolute;
-    top: 90px;
-    left: 15px;
-    width: 90%;
+
+  .img_about {
+    float: absolute;
+    padding: 15px 100px;
+    width: 150px;
+    height: 150px;
   }
 
-  .img_about{
-    float:absolute;
-    padding:15px 100px;
-    width:150px; 
-    height:150px;
+  .SQimg2 {
+    filter: drop-shadow(6px 6px 6px white);
+    width: 350px;
+    height: 190px;
+    position: absolute;
+    top: 300px;
+    left: 5px;
   }
+
+
+  .head_gameMobile {
+    color: black;
+    font-family: arial;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    width: 90%;
+    z-index: 5;
+  }
+
+  .HR_img {
+    filter: drop-shadow(6px 6px 6px white);
+    width: 350px;
+    height: 190px;
+    position: absolute;
+    top: 950px;
+    left: 5px;
+  }
+
+  .doll {
+    position: absolute;
+    left: -50px;
+    display: none;
+    z-index: -2;
+    opacity: 0.7;
+    width: 350px;
+    height: 800px;
+    top: 225px;
+  }
+
+  .char {
+    position: absolute;
+    right: -60px;
+    display: none;
+    z-index: -2;
+    width: 500px;
+    height: 300px;
+    top: 750px;
+    opacity: 0.7;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .Store_fo0ter {
+    display: none;
+  }
+
+  .req4 {
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-color: grey;
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    margin: 0px;
+    padding: 10px;
+    top: 1155px;
+    left: 5px;
+    font-family: verdana;
+  }
+
+  .req3 {
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-color: grey;
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    margin: 0px;
+    padding: 10px;
+    top: 510px;
+    left: 5px;
+    font-family: verdana;
+  }
+
+  .HR_head {
+    color: black;
+    font-family: arial;
+    position: absolute;
+    top: 850px;
+    left: 10px;
+  }
+
+  #mobile_social{
+    position: absolute;
+    right: -5px;
+    top: 1300px;
+    background-color: #154c79;
+    padding: 10px 10px;
+    width: 95%;
+  }
+
+  .btn2 {
+    position: relative;
+    padding: 5px;
+    top: 290px;
+    right: -150px;
+    background-color: white;
+    color: #154c79;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .btn3 {
+    position: relative;
+    padding: 5px;
+    top: 290px;
+    left: -150px;
+    background-color: white;
+    color: #154c79;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .head_store {
+    width: 170px;
+    height: 55px;
+    position: absolute;
+    top: 210px;
+    left: 100px;
+  }
+
+  .Store_1 {
+    background-color: white;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 350px;
+    position: absolute;
+    top: 300px;
+    left: 5px;
+  }
+
+  .Store_2 {
+    background-color: white;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 350px;
+    position: absolute;
+    top: 680px;
+    left: 5px;
+  }
+
+  .Store_item {
+    width: 90%;
+    height: 100%;
+  }
+
+  #store_social{
+    position: absolute;
+    right: -5px;
+    top: 1050px;
+    background-color: #154c79;
+    padding: 10px 10px;
+    width: 95%;
+  }
+
+
 }
