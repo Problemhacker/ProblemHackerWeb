@@ -141,10 +141,9 @@ html {
 
 .icon_contain {
   position: fixed;
-  right: 40px;
+  right:0px;
   top: 320px;
-  background-color: #154c79;
-  padding: 10px;
+  background-color: grey;
   margin: 5px;
 }
 
@@ -154,7 +153,7 @@ html {
   transition-property: all;
   transition-duration: 0.5s;
   padding-top: 6px;
-  padding-bottom: 25px;
+  padding:15px;
 }
 
 .custom-icon1 {
@@ -162,28 +161,26 @@ html {
   color: white;
   transition-property: all;
   transition-duration: 0.5s;
-  padding-bottom: 18px;
+  padding: 15px;
 }
 
 .goto {
-  filter: brightness(0) invert(1);
+  /*filter: brightness(0) invert(1);*/
   width: 35px;
   height: 35px;
-  padding-bottom: 5px;
+  padding: 15px;
   transition-duration: 0.3s;
+  background-color:black;
 }
 
 .custom-icon:hover {
-  color: #FF0000;
+  background-color: #FF0000;
 }
 
 .custom-icon1:hover {
-  color: #00acee;
+  background-color: #00acee;
 }
 
-.goto:hover {
-  filter: none;
-}
 
 .req {
 
@@ -415,6 +412,19 @@ html {
   width: 900px;
 }
 
+/*.side_floating_text{
+  color:white;
+  background-color: #154c65;
+  position:relative;
+  float:right;
+  /*right:-14px;
+  bottom:-5px;
+  padding: 10px 54px;
+  margin:-65px;
+  transform:rotate(-90deg);
+  font-size: 20px;
+}*/
+
 
 @media (max-width:400px) {
 
@@ -531,12 +541,11 @@ html {
 
   .Index_bg {
     position: absolute;
-    top: 300px;
-    left: 100px;
-    width: 300px;
-    height: 240px;
+    top: 215px;
+    left: 45px;
+    width: 310px;
+    height: 180px;
     padding: 0px;
-    display:none;
   }
 
   .Index_bg2:hover {
@@ -801,7 +810,7 @@ html {
     display: none;
   }
 
-  .Store_fo0ter {
+  .Store_footer {
     display: none;
   }
 
@@ -845,7 +854,7 @@ html {
     position: absolute;
     right: -5px;
     top: 1300px;
-    background-color: #154c79;
+    background-color: grey;
     padding: 10px 10px;
     width: 95%;
   }
@@ -911,14 +920,37 @@ html {
     height: 100%;
   }
 
-  #store_social{
+ /* #store_social{
     position: absolute;
     right: -5px;
     top: 1050px;
-    background-color: #154c79;
+    background-color: grey;
     padding: 10px 10px;
     width: 95%;
   }
 
+  .side_floating_text{
+    display:none;
+  }
+
+  .goto {
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    transition-duration: 0.3s;
+    background-color: grey;
+  }
+  
+  .custom-icon:hover {
+    background-color: grey;
+  }
+  
+  .custom-icon1:hover {
+    background-color: grey;
+  }*/
+
+  .icon_contain{
+    display:none;
+  }
 
 }
